@@ -1,0 +1,14 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+}
+.v-main {
+  background-color: var(--vt-c-black);
+  width: 100%;
+}
+html {
+  overflow-y: auto !important;
+}
+
