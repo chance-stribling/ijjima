@@ -1,16 +1,16 @@
 <script setup>
 import { RouterView } from 'vue-router'
+import AppBar from './components/AppBar.vue'
 </script>
 
 <template>
-  <v-app app>
-    <!-- <TopBar /> -->
+  <v-app>
+    <AppBar />
     <v-main>
-      <v-container fluid class="pa-0">
-        <RouterView />
-      </v-container>
+      <RouterView />
     </v-main>
   </v-app>
+  <div class="circle"></div>
 </template>
 
 <style scoped></style>
