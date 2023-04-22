@@ -1,7 +1,16 @@
-<script setup>
-import { ref } from 'vue'
-
-const title = ref('The Funny Dudes')
+<script >
+export default{
+  data(){
+    return{
+      title: 'The Funny Dudes',
+    }
+  },
+  methods:{
+      top(){
+             window.scrollTo(0,0);
+           }
+        }
+}
 </script>
 
 <template>
@@ -11,7 +20,7 @@ const title = ref('The Funny Dudes')
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </v-col>
       <v-col cols="4" align="center">
-        <h1 flex centered class="title">{{ title }}</h1>
+        <h1 flex centered class="title" style="cursor: pointer;" @click.stop="top()">{{ title }}</h1>
       </v-col>
       <v-col cols="4" align="center">
         <v-btn icon="mdi-spotify" href="https://open.spotify.com/playlist/0PWhB1LKuxePCF5F5p48yC" target="_blank"></v-btn>
